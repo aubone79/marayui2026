@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.log
+.vercel/
+.env
+.env.local
+node_modules/
+.idea/
+.vscode/
+
+# Local QA artifacts
+.playwright-mcp/
+qa-*.png
+qa-*.jpeg
