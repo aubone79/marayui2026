@@ -15,7 +15,7 @@ Adrian Aubone. Cuenta personal: `aubone79@gmail.com`. Cuenta profesional (Korone
 ## Stack
 
 - HTML5 + CSS3 + JavaScript vanilla. CERO frameworks, CERO build, CERO npm.
-- Deploy a Vercel (recomendado, repo privado) o GitHub Pages, sin cambios.
+- Deploy: GitHub Pages directo desde `main` / root del repo público. URL: `https://aubone79.github.io/marayui2026/`.
 - Single-page real: todas las secciones en `index.html` con scroll. Sin gate.
 
 ## Estructura final esperada
@@ -27,7 +27,6 @@ Adrian Aubone. Cuenta personal: `aubone79@gmail.com`. Cuenta profesional (Korone
 ├── index.html                (microsite single-page completo)
 ├── styles.css
 ├── app.js
-├── vercel.json
 ├── docs/
 │   ├── 01-design-system.md   (paleta, tipografía, animaciones)
 │   ├── 02-sections.md        (las 8 secciones del microsite, en orden)

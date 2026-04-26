@@ -1,8 +1,8 @@
 # Mundial Marayui 2026
 
-Microsite privado para el finde del **25-28 de junio de 2026** en la casa de Marayui, Chapadmalal.
+Microsite para el finde del **25-28 de junio de 2026** en la casa de Marayui, Chapadmalal.
 
-> Privacidad: el sitio queda público una vez deployado, pero no está indexado (`noindex`) y la URL solo la compartís por WhatsApp con los invitados. Repo en GitHub privado.
+> Privacidad: el repo es público (necesario para GitHub Pages free), pero el sitio no está indexado (`noindex, nofollow`) y la URL solo la compartís por WhatsApp con los invitados. No hay nada secreto en el código.
 
 ## Levantarlo localmente
 
@@ -16,21 +16,18 @@ npx http-server -p 8000
 # Después abrís: http://localhost:8000
 ```
 
-## Deploy a Vercel (recomendado)
+## Deploy: GitHub Pages
 
-1. [vercel.com](https://vercel.com) → **Add New → Project → Import Git Repository**.
-2. Seleccionar el repo `marayui2026`.
-3. **Framework Preset: Other**. **Build Command: (vacío)**. **Output Directory: `./`**.
-4. Deploy. URL queda: `https://<proyecto>.vercel.app`.
+El repo ya está configurado para servirse por GitHub Pages desde `main` / root.
 
-Con repo privado igual funciona en plan free de Vercel.
+**URL del sitio**: `https://aubone79.github.io/marayui2026/`
 
-## Deploy a GitHub Pages (alternativa)
+Cada `git push` a `main` actualiza el sitio en ~1 minuto.
 
-> Nota: GH Pages con repo privado requiere GitHub Pro ($4/mes). Si el repo es público, el código queda visible — el sitio igual no tiene secretos, así que está bien.
+Si por alguna razón hay que reactivarlo:
 
-1. **Settings → Pages → Source: Deploy from a branch → Branch: `main` → Folder: `/ (root)`**.
-2. Esperar ~1 min. URL queda: `https://<usuario>.github.io/<repo>/`.
+1. **Settings → Pages → Source: Deploy from a branch → Branch: `main` → Folder: `/ (root)`** → Save.
+2. Esperar ~1 min.
 
 ## Cosas a reemplazar antes de mandarlo al grupo
 
@@ -46,7 +43,6 @@ Con repo privado igual funciona en plan free de Vercel.
 ├── index.html       (microsite single-page con las 8 secciones)
 ├── styles.css
 ├── app.js
-├── vercel.json
 ├── assets/
 │   ├── img/
 │   └── icons/
