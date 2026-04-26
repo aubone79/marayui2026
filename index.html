@@ -33,6 +33,52 @@
 <body>
   <a href="#main" class="skip-link">Saltar al contenido</a>
 
+  <!-- Top ticker — fixture loop -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span class="ticker__group">
+        <span class="ticker__live"><i></i> EN VIVO DESDE LA CASA</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇦🇷 ARGENTINA <em>vs</em> JORDANIA 🇯🇴 · SÁB 27 · 23:00 ART</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇺🇾 URUGUAY <em>vs</em> ESPAÑA 🇪🇸 · VIE 26 · 19:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇪🇨 ECUADOR <em>vs</em> ALEMANIA 🇩🇪 · JUE 25 · 15:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇨🇴 COLOMBIA <em>vs</em> PORTUGAL 🇵🇹 · SÁB 27 · 19:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇳🇴 NORUEGA <em>vs</em> FRANCIA 🇫🇷 · VIE 26 · 14:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇵🇦 PANAMÁ <em>vs</em> INGLATERRA · SÁB 27 · 16:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🏌️ MGT INAUGURAL · MARAYUI '26</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🥩 ASADO · SÁB 27 · TRUCO HASTA QUE AGUANTEN</span>
+        <span class="ticker__sep">●</span>
+      </span>
+      <span class="ticker__group" aria-hidden="true">
+        <span class="ticker__live"><i></i> EN VIVO DESDE LA CASA</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇦🇷 ARGENTINA <em>vs</em> JORDANIA 🇯🇴 · SÁB 27 · 23:00 ART</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇺🇾 URUGUAY <em>vs</em> ESPAÑA 🇪🇸 · VIE 26 · 19:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇪🇨 ECUADOR <em>vs</em> ALEMANIA 🇩🇪 · JUE 25 · 15:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇨🇴 COLOMBIA <em>vs</em> PORTUGAL 🇵🇹 · SÁB 27 · 19:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇳🇴 NORUEGA <em>vs</em> FRANCIA 🇫🇷 · VIE 26 · 14:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🇵🇦 PANAMÁ <em>vs</em> INGLATERRA · SÁB 27 · 16:00</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🏌️ MGT INAUGURAL · MARAYUI '26</span>
+        <span class="ticker__sep">●</span>
+        <span class="ticker__item">🥩 ASADO · SÁB 27 · TRUCO HASTA QUE AGUANTEN</span>
+        <span class="ticker__sep">●</span>
+      </span>
+    </div>
+  </div>
+
   <!-- Top nav -->
   <nav class="nav" aria-label="Navegación">
     <div class="nav__inner">
@@ -52,7 +98,7 @@
       </a>
       <div class="nav__pill" aria-hidden="true">
         <span class="nav__pill-dot"></span>
-        EDICIÓN 01 · INAUGURAL
+        MUNDIAL '26 · TRADICIÓN
       </div>
     </div>
   </nav>
@@ -90,30 +136,29 @@
         </div>
 
         <h1 id="hero-title" class="hero__title">
-          <span class="hero__title-meta">25 — 28 · JUNIO · 2026</span>
+          <span class="hero__title-meta">JUEVES 25 — DOMINGO 28 · JUNIO · 2026</span>
           <span class="hero__title-shout">Mundial</span>
           <span class="hero__title-italic">Marayui<span class="hero__title-period">.</span></span>
         </h1>
 
-        <div class="hero__photo">
-          <img src="assets/img/IMG_6313.JPG" alt="Casa de Marayui" loading="eager" decoding="async" />
-          <div class="hero__photo-frame" aria-hidden="true">
-            <span class="hero__photo-corner hero__photo-corner--tl"></span>
-            <span class="hero__photo-corner hero__photo-corner--tr"></span>
-            <span class="hero__photo-corner hero__photo-corner--bl"></span>
-            <span class="hero__photo-corner hero__photo-corner--br"></span>
+        <figure class="hero__photo polaroid">
+          <span class="polaroid__tape" aria-hidden="true"></span>
+          <div class="polaroid__frame">
+            <img src="assets/img/IMG_6313.JPG" alt="Casa de Marayui" loading="eager" decoding="async" />
           </div>
-          <div class="hero__photo-tag">SEDE · MARAYUI</div>
-        </div>
+          <figcaption class="polaroid__caption">
+            Sede &middot; Marayui &middot; <em>Mundial '26</em>
+          </figcaption>
+        </figure>
 
         <p class="hero__lede">
-          Cuatro días en la casa, durante la última semana de fase de grupos del Mundial 2026.
-          Agenda abierta, formato a discutir.
+          Como cada Mundial, nos juntamos. Esta vez son cuatro días en Marayui,
+          durante la última semana de fase de grupos. Agenda abierta, formato a discutir.
         </p>
 
         <div class="hero__bottom">
           <a href="#confirmar" class="btn btn--primary">
-            Avisanos si venís
+            Avisá si venís
             <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -158,8 +203,9 @@
               QUINCE <em>convocados.</em>
             </h2>
             <p class="display-sub">
-              La casa tiene 15 lugares para dormir, distribuidos en dos plantas.
-              Reservan ustedes el orden — si vienen en pareja o con familia, díganlo al confirmar.
+              Los cuartos son <em>lotes para reservarse</em> — pero, ya saben, el orden es por
+              llegada. La única excepción es Benjamin, que se queda con el cuarto de servicio
+              él solo (después explicamos).
             </p>
           </div>
 
@@ -174,53 +220,31 @@
                 <span class="plan-card__floor">1P</span>
                 <div class="plan-card__head-text">
                   <span class="plan-card__title">Primera Planta</span>
-                  <span class="plan-card__total">12 camas · 3 baños</span>
+                  <span class="plan-card__total">14 camas · 3 baños</span>
                 </div>
               </header>
               <ul class="plan-card__rooms">
-                <li>
-                  <span class="dorsal">01</span>
-                  <span class="plan-card__name">Cuarto 1</span>
-                  <span class="plan-card__bed">2 camas</span>
-                </li>
-                <li>
-                  <span class="dorsal">02</span>
-                  <span class="plan-card__name">Cuarto 2</span>
-                  <span class="plan-card__bed">2 camas</span>
-                </li>
-                <li>
-                  <span class="dorsal">03</span>
-                  <span class="plan-card__name">Cuarto 3</span>
-                  <span class="plan-card__bed">2 camas</span>
-                </li>
-                <li>
-                  <span class="dorsal">04</span>
-                  <span class="plan-card__name">Cuarto 4</span>
-                  <span class="plan-card__bed">2 cuchetas <em>(4)</em></span>
-                </li>
-                <li>
-                  <span class="dorsal">05</span>
-                  <span class="plan-card__name">Altillo</span>
-                  <span class="plan-card__bed">4 camas</span>
-                </li>
+                <li><span class="dorsal">01</span><span class="plan-card__name">Cuarto 1</span><span class="plan-card__bed">2 camas</span></li>
+                <li><span class="dorsal">02</span><span class="plan-card__name">Cuarto 2</span><span class="plan-card__bed">2 camas</span></li>
+                <li><span class="dorsal">03</span><span class="plan-card__name">Cuarto 3</span><span class="plan-card__bed">2 camas</span></li>
+                <li><span class="dorsal">04</span><span class="plan-card__name">Cuarto 4 <em>cuchetas</em></span><span class="plan-card__bed">4 camas</span></li>
+                <li><span class="dorsal">05</span><span class="plan-card__name">Altillo</span><span class="plan-card__bed">4 camas</span></li>
               </ul>
             </article>
 
-            <article class="plan-card plan-card--alt">
+            <article class="plan-card plan-card--alt plan-card--reserved">
+              <span class="plan-card__reserved-tag">RESERVADO</span>
               <header class="plan-card__head">
                 <span class="plan-card__floor">PB</span>
                 <div class="plan-card__head-text">
-                  <span class="plan-card__title">Planta Baja</span>
-                  <span class="plan-card__total">1 cama · suplente</span>
+                  <span class="plan-card__title">Cuarto de Servicio</span>
+                  <span class="plan-card__total">para Benjamin · que duerma tranquilo</span>
                 </div>
               </header>
-              <ul class="plan-card__rooms">
-                <li>
-                  <span class="dorsal">06</span>
-                  <span class="plan-card__name">Cuarto de servicio</span>
-                  <span class="plan-card__bed">1 cama <em>(quizás 2)</em></span>
-                </li>
-              </ul>
+              <p class="plan-card__note">
+                <em>Benjamin va acá solo</em> — tiene el sueño liviano y así duerme tranquilo
+                (y los demás, también). El resto, por orden de llegada.
+              </p>
             </article>
           </div>
         </div>
@@ -274,7 +298,7 @@
                 <li><span class="timeline__time">mañana</span><span>Primera ronda <em>MGT</em></span></li>
                 <li><span class="timeline__time">mediodía</span><span>Algo informal en la casa</span></li>
                 <li><span class="timeline__time">tarde</span><span>Paddle, playa o lo que dé</span></li>
-                <li><span class="timeline__time">noche</span><span>Salida o cena casa, a definir</span></li>
+                <li><span class="timeline__time">noche</span><span><em>A definir</em></span></li>
               </ul>
             </div>
           </article>
@@ -292,7 +316,7 @@
                 <li><span class="timeline__time">mañana</span><span>Segunda ronda <em>MGT</em> · final del torneo</span></li>
                 <li><span class="timeline__time">tarde</span><span>Previa</span></li>
                 <li><span class="timeline__time">23:00</span><span><strong>🇦🇷 Argentina vs Jordania 🇯🇴</strong></span></li>
-                <li><span class="timeline__time">+ tarde</span><span>El asado · truco hasta que aguanten</span></li>
+                <li><span class="timeline__time">noche</span><span>El asado y el truco · después <em>a definir</em></span></li>
               </ul>
             </div>
           </article>
@@ -568,7 +592,7 @@
           <p class="mgt__sub">9 hoyos viernes · 9 hoyos sábado · 18 totales</p>
 
           <ul class="mgt__specs">
-            <li><span class="mgt__key">Formato</span><span class="mgt__val">A definir <em>en la casa</em></span></li>
+            <li><span class="mgt__key">Formato</span><span class="mgt__val">Lo que <em>defina Santi</em></span></li>
             <li><span class="mgt__key">Modalidad</span><span class="mgt__val">Medal play sugerido</span></li>
             <li><span class="mgt__key">Hándicap</span><span class="mgt__val">A discutir</span></li>
             <li><span class="mgt__key">Ranking</span><span class="mgt__val">Acumulado dos rondas</span></li>
@@ -630,7 +654,7 @@
             <p class="card__copy">
               El asado encarado mientras juega Argentina. Después, mesa, vino y truco hasta que aguanten.
             </p>
-            <p class="card__tag">REGLAS CASA · TRUCO A OSCURAS</p>
+            <p class="card__tag">REGLAS CASA · ELIMINACIÓN DIRECTA</p>
           </article>
         </div>
       </div>
@@ -652,11 +676,11 @@
         </div>
 
         <h2 id="cta-title" class="cta__title reveal">
-          <em>Avisanos</em><br/>si venís.
+          <em>Avisá</em><br/>si venís.
         </h2>
         <p class="cta__lead reveal">
-          El grupo de WhatsApp ya está armado — son los mismos del finde. Confirmá ahí cuántos vienen
-          y si traés a alguien, así repartimos las camas.
+          El grupo de WhatsApp ya está armado — son los mismos del finde. Confirmá ahí si venís,
+          así sabemos quiénes somos.
         </p>
 
         <a class="btn btn--primary btn--xl reveal"
@@ -691,7 +715,7 @@
           <div class="footer__col footer__col--center">
             <span class="footer__rule" aria-hidden="true"></span>
             <p class="footer__date">25 — 28 · VI · MMXXVI</p>
-            <p class="footer__edition">EDICIÓN 01 · INAUGURAL</p>
+            <p class="footer__edition">MUNDIAL '26 · TRADICIÓN</p>
             <span class="footer__rule" aria-hidden="true"></span>
           </div>
           <div class="footer__col footer__col--right">

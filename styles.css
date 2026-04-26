@@ -190,6 +190,77 @@ a { color: inherit; text-decoration: none; }
 
 .btn[aria-disabled="true"] { pointer-events: none; opacity: 0.5; }
 
+/* ---------- TICKER (top marquee) ---------- */
+.ticker {
+  background: var(--ink);
+  color: var(--cream);
+  border-bottom: 1px solid var(--field);
+  overflow: hidden;
+  position: relative;
+  z-index: 60;
+}
+.ticker__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 0;
+  animation: tickerScroll 80s linear infinite;
+}
+.ticker__group {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-4);
+  padding: 0.7rem var(--s-4);
+  white-space: nowrap;
+  font-family: var(--font-shout);
+  font-size: 0.8125rem;
+  letter-spacing: 0.16em;
+}
+.ticker__live {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  background: var(--red);
+  color: var(--cream);
+  padding: 0.3em 0.6em;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+}
+.ticker__live i {
+  width: 6px; height: 6px;
+  border-radius: var(--r-full);
+  background: var(--cream);
+  animation: tickerLive 1s var(--ease-inout) infinite;
+}
+@keyframes tickerLive {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.ticker__item {
+  display: inline-flex; align-items: center; gap: 0.4em;
+  color: var(--cream);
+}
+.ticker__item em {
+  font-style: italic;
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--gold-soft);
+  text-transform: lowercase;
+  letter-spacing: 0;
+  margin: 0 0.25em;
+}
+.ticker__sep { color: var(--gold); font-size: 0.5em; }
+
+@keyframes tickerScroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker__track { animation: none; }
+  .ticker__live i { animation: none; }
+}
+
 /* ---------- NAV ---------- */
 .nav {
   position: sticky; top: 0; z-index: 50;
@@ -410,45 +481,81 @@ a { color: inherit; text-decoration: none; }
 }
 .hero__title-period { color: var(--red); }
 
-.hero__photo {
+/* Polaroid sobre la cancha */
+.hero__photo.polaroid {
   position: relative;
-  border-radius: var(--r-sm);
-  overflow: hidden;
-  min-height: 260px;
-  border: 4px solid var(--cream);
-  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.50), 0 0 0 1px rgba(212, 164, 55, 0.30);
+  background: var(--cream-soft);
+  padding: 14px 14px 0;
+  border-radius: 2px;
+  transform: rotate(-2.4deg);
+  transform-origin: 50% 60%;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.18),
+    0 28px 60px rgba(0, 0, 0, 0.42);
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 480px;
+  transition: transform 420ms var(--ease-spring), box-shadow 420ms var(--ease-out);
 }
-.hero__photo img {
+@media (min-width: 1024px) {
+  .hero__photo.polaroid { max-width: none; }
+}
+.hero__photo.polaroid:hover {
+  transform: rotate(-1deg) translateY(-4px);
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.04),
+    0 8px 18px rgba(0, 0, 0, 0.22),
+    0 32px 70px rgba(0, 0, 0, 0.50);
+}
+
+.polaroid__tape {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 110px;
+  height: 28px;
+  background: rgba(212, 164, 55, 0.42);
+  border: 1px dashed rgba(212, 164, 55, 0.30);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+
+.polaroid__frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  aspect-ratio: 4 / 3;
+}
+.polaroid__frame img {
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: center 60%;
-  filter: saturate(0.92) contrast(1.05);
+  filter: saturate(0.95) contrast(1.04);
   display: block;
 }
 
-.hero__photo-frame {
-  position: absolute; inset: 0;
-  pointer-events: none;
-}
-.hero__photo-corner {
-  position: absolute;
-  width: 18px; height: 18px;
-  border: 2px solid var(--gold);
-}
-.hero__photo-corner--tl { top: 8px; left: 8px; border-right: 0; border-bottom: 0; }
-.hero__photo-corner--tr { top: 8px; right: 8px; border-left: 0; border-bottom: 0; }
-.hero__photo-corner--bl { bottom: 8px; left: 8px; border-right: 0; border-top: 0; }
-.hero__photo-corner--br { bottom: 8px; right: 8px; border-left: 0; border-top: 0; }
-
-.hero__photo-tag {
-  position: absolute;
-  bottom: var(--s-4); left: var(--s-4);
-  background: var(--gold);
+.polaroid__caption {
+  display: block;
+  padding: 14px 8px 18px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9375rem;
   color: var(--ink);
-  padding: var(--s-2) var(--s-4);
-  font-family: var(--font-shout);
-  font-size: 0.875rem;
-  letter-spacing: 0.12em;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.polaroid__caption em {
+  font-style: italic;
+  color: var(--field);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .hero__photo.polaroid { transform: rotate(-1.5deg); margin: 0 auto; }
 }
 
 .hero__lede {
@@ -827,6 +934,47 @@ a { color: inherit; text-decoration: none; }
   color: var(--field);
   font-weight: 500;
   margin-left: 4px;
+}
+.plan-card__name em {
+  font-style: italic;
+  color: var(--ink-3);
+  font-weight: 400;
+  font-size: 0.875em;
+  margin-left: 4px;
+}
+
+.plan-card--reserved {
+  background: linear-gradient(180deg, rgba(212, 164, 55, 0.08), var(--paper));
+  border-color: var(--gold);
+}
+.plan-card--reserved::before { background: var(--red); }
+
+.plan-card__reserved-tag {
+  position: absolute;
+  top: var(--s-4); right: var(--s-4);
+  background: var(--red);
+  color: var(--cream);
+  font-family: var(--font-shout);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  padding: 0.3em 0.6em;
+  border-radius: var(--r-sm);
+  transform: rotate(4deg);
+}
+
+.plan-card__note {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+  line-height: 1.55;
+  padding: var(--s-3) 0;
+}
+.plan-card__note em {
+  font-style: italic;
+  color: var(--field);
+  font-weight: 500;
 }
 
 /* =========================================================
