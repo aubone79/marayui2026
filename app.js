@@ -6,36 +6,6 @@
 
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Split text on hero title ---------- */
-  const splitText = () => {
-    const el = document.querySelector('[data-split-text]');
-    if (!el || prefersReduced) return;
-
-    const text = el.textContent.trim();
-    el.textContent = '';
-
-    let charIndex = 0;
-    const words = text.split(' ');
-    words.forEach((word, wi) => {
-      const wordSpan = document.createElement('span');
-      wordSpan.className = 'word';
-      wordSpan.style.display = 'inline-block';
-      wordSpan.style.whiteSpace = 'nowrap';
-
-      [...word].forEach((ch) => {
-        const span = document.createElement('span');
-        span.className = 'char';
-        span.textContent = ch;
-        span.style.animationDelay = `${300 + charIndex * 30}ms`;
-        wordSpan.appendChild(span);
-        charIndex++;
-      });
-
-      el.appendChild(wordSpan);
-      if (wi < words.length - 1) el.appendChild(document.createTextNode(' '));
-    });
-  };
-
   /* ---------- Countdown ---------- */
   const initCountdown = () => {
     const grid = document.querySelector('[data-countdown]');
@@ -165,7 +135,6 @@
 
   /* ---------- Init on DOM ready ---------- */
   const init = () => {
-    splitText();
     initCountdown();
     initReveal();
     initFixtureToggle();
