@@ -6,26 +6,26 @@
 
   <title>Mundial Marayui · 25–28 junio 2026</title>
   <meta name="description" content="Cuatro días en Marayui. Última semana de fase de grupos del Mundial 2026. Edición inaugural." />
-  <meta name="theme-color" content="#1A1817" />
+  <meta name="theme-color" content="#0F2E1F" />
   <meta name="robots" content="noindex, nofollow" />
 
   <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231A1817'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-style='italic' font-size='18' font-weight='600' fill='%23C9A961' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230F2E1F'/%3E%3Cpath d='M16 6L21 10L19 16L13 16L11 10Z' fill='none' stroke='%23F4EFE0' stroke-width='1.2'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23F4EFE0' stroke-width='0.8'/%3E%3C/svg%3E" />
 
   <meta property="og:title" content="Mundial Marayui · Edición 01" />
-  <meta property="og:description" content="Cuatro días en Marayui. Última semana de fase de grupos del Mundial 2026." />
+  <meta property="og:description" content="Cuatro días. Una casa. El Mundial." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/IMG_6313.JPG" />
   <meta property="og:locale" content="es_AR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mundial Marayui · Edición 01" />
-  <meta name="twitter:description" content="Cuatro días en Marayui. Última semana de fase de grupos del Mundial 2026." />
+  <meta name="twitter:description" content="Cuatro días. Una casa. El Mundial." />
   <meta name="twitter:image" content="assets/img/IMG_6313.JPG" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -33,450 +33,539 @@
 <body>
   <a href="#main" class="skip-link">Saltar al contenido</a>
 
-  <!-- Top marquee — banderas del finde -->
-  <div class="topbar" aria-hidden="true">
-    <div class="topbar__track">
-      <span class="topbar__item">🇦🇷 ARGENTINA · MATCHDAY 3 · SAB 27 · 23:00 ART</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🇺🇾 URUGUAY <em>vs</em> ESPAÑA 🇪🇸 · VIE 26 · 19:00</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🇪🇨 ECUADOR <em>vs</em> ALEMANIA 🇩🇪 · JUE 25 · 15:00</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🇨🇴 COLOMBIA <em>vs</em> PORTUGAL 🇵🇹 · SAB 27 · 19:00</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🏌️ MGT INAUGURAL · MARAYUI '26</span>
-      <span class="topbar__dot">●</span>
-      <!-- duplicado para loop continuo -->
-      <span class="topbar__item">🇦🇷 ARGENTINA · MATCHDAY 3 · SAB 27 · 23:00 ART</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🇺🇾 URUGUAY <em>vs</em> ESPAÑA 🇪🇸 · VIE 26 · 19:00</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🇪🇨 ECUADOR <em>vs</em> ALEMANIA 🇩🇪 · JUE 25 · 15:00</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🇨🇴 COLOMBIA <em>vs</em> PORTUGAL 🇵🇹 · SAB 27 · 19:00</span>
-      <span class="topbar__dot">●</span>
-      <span class="topbar__item">🏌️ MGT INAUGURAL · MARAYUI '26</span>
-      <span class="topbar__dot">●</span>
+  <!-- Top nav -->
+  <nav class="nav" aria-label="Navegación">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__brand" aria-label="Mundial Marayui">
+        <span class="nav__crest" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36">
+            <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="0.6"/>
+            <path d="M20 9L26 13.5L24 21L16 21L14 13.5Z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            <text x="20" y="34" font-family="'Bebas Neue', Impact, sans-serif" font-size="6" font-weight="400" fill="currentColor" text-anchor="middle" letter-spacing="1">MM '26</text>
+          </svg>
+        </span>
+        <span class="nav__brand-text">
+          <span class="nav__brand-line">Mundial</span>
+          <span class="nav__brand-line nav__brand-line--italic">Marayui</span>
+        </span>
+      </a>
+      <div class="nav__pill" aria-hidden="true">
+        <span class="nav__pill-dot"></span>
+        EDICIÓN 01 · INAUGURAL
+      </div>
     </div>
-  </div>
+  </nav>
 
   <main id="main">
 
-    <!-- HERO -->
+    <!-- HERO — POSTER MUNDIAL -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="hero__photo" role="img" aria-label="Casa de Marayui">
-        <img src="assets/img/IMG_6313.JPG" alt="Casa de Marayui, exterior con parque" loading="eager" decoding="async" />
-      </div>
-      <div class="hero__overlay" aria-hidden="true"></div>
-      <div class="hero__grain" aria-hidden="true"></div>
-
-      <div class="hero__bar hero__bar--top" aria-hidden="true">
-        <span>Edición 01</span>
-        <span>Marayui · Chapadmalal</span>
-        <span>Ed. Inaugural</span>
-      </div>
+      <!-- Cancha pattern -->
+      <svg class="hero__pitch" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <!-- center circle -->
+        <circle cx="600" cy="400" r="180" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="600" cy="400" r="3" fill="currentColor"/>
+        <!-- center line -->
+        <line x1="0" y1="400" x2="1200" y2="400" stroke="currentColor" stroke-width="1"/>
+        <!-- penalty boxes -->
+        <rect x="0" y="240" width="200" height="320" fill="none" stroke="currentColor" stroke-width="1"/>
+        <rect x="0" y="320" width="80" height="160" fill="none" stroke="currentColor" stroke-width="1"/>
+        <rect x="1000" y="240" width="200" height="320" fill="none" stroke="currentColor" stroke-width="1"/>
+        <rect x="1120" y="320" width="80" height="160" fill="none" stroke="currentColor" stroke-width="1"/>
+        <!-- corner arcs -->
+        <path d="M 0 0 A 30 30 0 0 1 30 0 L 30 0 L 0 0 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M 1170 0 A 30 30 0 0 0 1200 30 L 1200 0 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M 0 770 A 30 30 0 0 0 30 800 L 0 800 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M 1170 800 A 30 30 0 0 1 1200 770 L 1200 800 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </svg>
 
       <div class="hero__inner">
-        <div class="hero__monogram" aria-hidden="true">
-          <svg viewBox="0 0 220 80" width="220" height="80">
-            <text x="0" y="62" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="72" font-weight="600" fill="currentColor" letter-spacing="-2">MM</text>
-            <text x="135" y="38" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="500" fill="currentColor">'26</text>
-            <line x1="0" y1="74" x2="180" y2="74" stroke="currentColor" stroke-width="0.5" />
-          </svg>
+        <div class="hero__top">
+          <span class="hero__chip">
+            <span class="hero__chip-dot"></span>
+            FIFA WORLD CUP '26 · GROUP STAGE
+          </span>
+          <span class="hero__matchday">MATCHDAYS 1–4</span>
         </div>
 
-        <p class="hero__kicker">Una propuesta para el finde del</p>
         <h1 id="hero-title" class="hero__title">
-          <span class="hero__title-line">Mundial</span>
-          <span class="hero__title-line hero__title-line--italic">Marayui</span>
+          <span class="hero__title-meta">25 — 28 · JUNIO · 2026</span>
+          <span class="hero__title-shout">Mundial</span>
+          <span class="hero__title-italic">Marayui<span class="hero__title-period">.</span></span>
         </h1>
-        <p class="hero__sub">Última semana de fase de grupos del Mundial 2026. Cuatro días en la casa, agenda abierta, formato a discutir.</p>
 
-        <div class="hero__meta">
-          <div class="hero__meta-block">
-            <span class="hero__meta-label">Cuándo</span>
-            <span class="hero__meta-val">25 — 28 jun 2026</span>
+        <div class="hero__photo">
+          <img src="assets/img/IMG_6313.JPG" alt="Casa de Marayui" loading="eager" decoding="async" />
+          <div class="hero__photo-frame" aria-hidden="true">
+            <span class="hero__photo-corner hero__photo-corner--tl"></span>
+            <span class="hero__photo-corner hero__photo-corner--tr"></span>
+            <span class="hero__photo-corner hero__photo-corner--bl"></span>
+            <span class="hero__photo-corner hero__photo-corner--br"></span>
           </div>
-          <div class="hero__meta-block">
-            <span class="hero__meta-label">Faltan</span>
-            <span class="hero__meta-val countdown" data-countdown>
-              <span data-cd="days">--</span><span class="hero__meta-unit">d</span>
-              <span data-cd="hours">--</span><span class="hero__meta-unit">h</span>
-              <span data-cd="minutes">--</span><span class="hero__meta-unit">m</span>
-              <span data-cd="seconds">--</span><span class="hero__meta-unit">s</span>
+          <div class="hero__photo-tag">SEDE · MARAYUI</div>
+        </div>
+
+        <p class="hero__lede">
+          Cuatro días en la casa, durante la última semana de fase de grupos del Mundial 2026.
+          Agenda abierta, formato a discutir.
+        </p>
+
+        <div class="hero__bottom">
+          <a href="#confirmar" class="btn btn--primary">
+            Avisanos si venís
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <div class="hero__counter" aria-live="polite">
+            <span class="hero__counter-label">Faltan</span>
+            <span class="hero__counter-grid" data-countdown>
+              <span class="cnum"><b data-cd="days">--</b><i>D</i></span>
+              <span class="cnum-sep">:</span>
+              <span class="cnum"><b data-cd="hours">--</b><i>H</i></span>
+              <span class="cnum-sep">:</span>
+              <span class="cnum"><b data-cd="minutes">--</b><i>M</i></span>
+              <span class="cnum-sep">:</span>
+              <span class="cnum"><b data-cd="seconds">--</b><i>S</i></span>
             </span>
-            <span class="hero__meta-val countdown__live" data-countdown-live hidden>Estamos ahí.</span>
+            <span class="hero__counter-live" data-countdown-live hidden>EN VIVO 🇦🇷</span>
           </div>
         </div>
-
-        <a href="#casa" class="hero__scroll" aria-label="Bajar al contenido">
-          <span>Continúa</span>
-          <span class="hero__scroll-line" aria-hidden="true"></span>
-        </a>
       </div>
+
+      <a href="#casa" class="hero__scroll" aria-label="Continuar">
+        <span class="hero__scroll-text">KICK-OFF</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </section>
 
-    <!-- 01 · LA CASA -->
-    <section class="section" id="casa" aria-labelledby="casa-title">
+    <!-- 01 · LA CASA / EL PLANTEL -->
+    <section class="section section--cream" id="casa" aria-labelledby="casa-title">
       <div class="container">
-        <header class="section__head reveal">
+        <div class="section__head reveal">
           <span class="section__num">01</span>
-          <span class="section__hairline" aria-hidden="true"></span>
-          <p class="caption">La casa</p>
-        </header>
+          <span class="section__sep" aria-hidden="true">/</span>
+          <span class="section__kicker">El Plantel</span>
+        </div>
 
-        <div class="casa-grid">
-          <div class="casa-grid__title reveal">
-            <h2 id="casa-title" class="display-italic">Quince<br />lugares<br />para dormir.</h2>
-            <p class="display-foot">Distribución en dos plantas. Reservan ustedes el orden.</p>
+        <div class="casa">
+          <div class="casa__intro reveal">
+            <h2 id="casa-title" class="display">
+              QUINCE <em>convocados.</em>
+            </h2>
+            <p class="display-sub">
+              La casa tiene 15 lugares para dormir, distribuidos en dos plantas.
+              Reservan ustedes el orden — si vienen en pareja o con familia, díganlo al confirmar.
+            </p>
           </div>
 
-          <div class="casa-grid__plan reveal">
-            <div class="floor">
-              <p class="floor__label"><span class="floor__num">1P</span> Primera planta</p>
-              <ul class="floor__rooms">
-                <li><span class="floor__name">Cuarto 1</span><span class="floor__icons" aria-hidden="true">▭ ▭</span><span class="floor__count">2</span></li>
-                <li><span class="floor__name">Cuarto 2</span><span class="floor__icons" aria-hidden="true">▭ ▭</span><span class="floor__count">2</span></li>
-                <li><span class="floor__name">Cuarto 3</span><span class="floor__icons" aria-hidden="true">▭ ▭</span><span class="floor__count">2</span></li>
-                <li><span class="floor__name">Cuarto 4 <em>cuchetas</em></span><span class="floor__icons" aria-hidden="true">▣ ▣</span><span class="floor__count">4</span></li>
-                <li><span class="floor__name">Altillo</span><span class="floor__icons" aria-hidden="true">▭ ▭ ▭ ▭</span><span class="floor__count">4</span></li>
-                <li class="floor__meta"><span class="floor__name">Baños</span><span class="floor__icons">·</span><span class="floor__count">3</span></li>
-              </ul>
-            </div>
-
-            <div class="floor">
-              <p class="floor__label"><span class="floor__num">PB</span> Planta baja</p>
-              <ul class="floor__rooms">
-                <li><span class="floor__name">Cuarto de servicio <em>(quizás 2)</em></span><span class="floor__icons" aria-hidden="true">▭</span><span class="floor__count">1</span></li>
-              </ul>
-            </div>
+          <div class="casa__big reveal">
+            <span class="bignum" aria-hidden="true">15</span>
+            <span class="bignum-label">CAMAS<br/>DISPONIBLES</span>
           </div>
 
-          <aside class="casa-grid__total reveal">
-            <span class="bignum">15</span>
-            <span class="bignum__label">camas<br />disponibles</span>
-            <p class="bignum__note">Si vienen en pareja o con familia, decílo al confirmar — se reparte mejor.</p>
-          </aside>
+          <div class="casa__plan reveal">
+            <article class="plan-card">
+              <header class="plan-card__head">
+                <span class="plan-card__floor">1P</span>
+                <div class="plan-card__head-text">
+                  <span class="plan-card__title">Primera Planta</span>
+                  <span class="plan-card__total">12 camas · 3 baños</span>
+                </div>
+              </header>
+              <ul class="plan-card__rooms">
+                <li>
+                  <span class="dorsal">01</span>
+                  <span class="plan-card__name">Cuarto 1</span>
+                  <span class="plan-card__bed">2 camas</span>
+                </li>
+                <li>
+                  <span class="dorsal">02</span>
+                  <span class="plan-card__name">Cuarto 2</span>
+                  <span class="plan-card__bed">2 camas</span>
+                </li>
+                <li>
+                  <span class="dorsal">03</span>
+                  <span class="plan-card__name">Cuarto 3</span>
+                  <span class="plan-card__bed">2 camas</span>
+                </li>
+                <li>
+                  <span class="dorsal">04</span>
+                  <span class="plan-card__name">Cuarto 4</span>
+                  <span class="plan-card__bed">2 cuchetas <em>(4)</em></span>
+                </li>
+                <li>
+                  <span class="dorsal">05</span>
+                  <span class="plan-card__name">Altillo</span>
+                  <span class="plan-card__bed">4 camas</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="plan-card plan-card--alt">
+              <header class="plan-card__head">
+                <span class="plan-card__floor">PB</span>
+                <div class="plan-card__head-text">
+                  <span class="plan-card__title">Planta Baja</span>
+                  <span class="plan-card__total">1 cama · suplente</span>
+                </div>
+              </header>
+              <ul class="plan-card__rooms">
+                <li>
+                  <span class="dorsal">06</span>
+                  <span class="plan-card__name">Cuarto de servicio</span>
+                  <span class="plan-card__bed">1 cama <em>(quizás 2)</em></span>
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 02 · AGENDA -->
-    <section class="section section--paper" id="agenda" aria-labelledby="agenda-title">
-      <div class="container">
-        <header class="section__head reveal">
-          <span class="section__num">02</span>
-          <span class="section__hairline" aria-hidden="true"></span>
-          <p class="caption">Agenda tentativa</p>
-        </header>
+    <!-- 02 · AGENDA / FIXTURE DE LA CASA -->
+    <section class="section section--field" id="agenda" aria-labelledby="agenda-title">
+      <svg class="section__pitch" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <circle cx="600" cy="300" r="120" fill="none" stroke="currentColor" stroke-width="1"/>
+        <line x1="0" y1="300" x2="1200" y2="300" stroke="currentColor" stroke-width="0.8"/>
+      </svg>
 
-        <h2 id="agenda-title" class="section__display reveal">
-          <em>Esto es</em> un esqueleto.<br />No una orden del día.
+      <div class="container">
+        <div class="section__head section__head--light reveal">
+          <span class="section__num">02</span>
+          <span class="section__sep" aria-hidden="true">/</span>
+          <span class="section__kicker">Fixture de la casa</span>
+        </div>
+
+        <h2 id="agenda-title" class="display display--light reveal">
+          Esto es <em>un esqueleto.</em><br/>
+          No una orden del día.
         </h2>
 
-        <div class="agenda">
-          <article class="agenda-day reveal">
-            <div class="agenda-day__date">
-              <span class="agenda-day__weekday">Jue</span>
-              <span class="agenda-day__num">25</span>
+        <div class="timeline">
+          <article class="timeline__day reveal">
+            <div class="timeline__date">
+              <span class="timeline__matchday-tag">MD 1</span>
+              <span class="timeline__num">25</span>
+              <span class="timeline__weekday">JUEVES</span>
             </div>
-            <p class="agenda-day__matchday">Matchday 1 · Llegada</p>
-            <ul class="agenda-day__list">
-              <li><span class="agenda-day__time">tarde</span><span>Llegada y check-in informal</span></li>
-              <li><span class="agenda-day__time">noche</span><span>Parrilla y fogón</span></li>
-            </ul>
+            <div class="timeline__body">
+              <p class="timeline__sub">Llegada</p>
+              <ul class="timeline__list">
+                <li><span class="timeline__time">tarde</span><span>Llegada y check-in informal</span></li>
+                <li><span class="timeline__time">noche</span><span>Parrilla y fogón</span></li>
+              </ul>
+            </div>
           </article>
 
-          <article class="agenda-day reveal">
-            <div class="agenda-day__date">
-              <span class="agenda-day__weekday">Vie</span>
-              <span class="agenda-day__num">26</span>
+          <article class="timeline__day reveal">
+            <div class="timeline__date">
+              <span class="timeline__matchday-tag">MD 2</span>
+              <span class="timeline__num">26</span>
+              <span class="timeline__weekday">VIERNES</span>
             </div>
-            <p class="agenda-day__matchday">Matchday 2 · Arranca el torneo</p>
-            <ul class="agenda-day__list">
-              <li><span class="agenda-day__time">mañana</span><span>Primera ronda <em>MGT</em></span></li>
-              <li><span class="agenda-day__time">mediodía</span><span>Algo informal en la casa</span></li>
-              <li><span class="agenda-day__time">tarde</span><span>Paddle / playa / lo que dé</span></li>
-              <li><span class="agenda-day__time">noche</span><span>Salida o cena casa, a definir</span></li>
-            </ul>
+            <div class="timeline__body">
+              <p class="timeline__sub">Arranca el torneo</p>
+              <ul class="timeline__list">
+                <li><span class="timeline__time">mañana</span><span>Primera ronda <em>MGT</em></span></li>
+                <li><span class="timeline__time">mediodía</span><span>Algo informal en la casa</span></li>
+                <li><span class="timeline__time">tarde</span><span>Paddle, playa o lo que dé</span></li>
+                <li><span class="timeline__time">noche</span><span>Salida o cena casa, a definir</span></li>
+              </ul>
+            </div>
           </article>
 
-          <article class="agenda-day agenda-day--featured reveal">
-            <span class="agenda-day__tag">El día grande</span>
-            <div class="agenda-day__date">
-              <span class="agenda-day__weekday">Sáb</span>
-              <span class="agenda-day__num">27</span>
+          <article class="timeline__day timeline__day--featured reveal">
+            <div class="timeline__date">
+              <span class="timeline__matchday-tag timeline__matchday-tag--gold">MD 3</span>
+              <span class="timeline__num">27</span>
+              <span class="timeline__weekday">SÁBADO</span>
+              <span class="timeline__badge">EL DÍA GRANDE</span>
             </div>
-            <p class="agenda-day__matchday">Matchday 3 · Definiciones</p>
-            <ul class="agenda-day__list">
-              <li><span class="agenda-day__time">mañana</span><span>Segunda ronda <em>MGT</em> · final del torneo</span></li>
-              <li><span class="agenda-day__time">tarde</span><span>Previa</span></li>
-              <li><span class="agenda-day__time">23:00</span><span><strong>Argentina vs Jordania</strong></span></li>
-              <li><span class="agenda-day__time">+ tarde</span><span>El asado · truco hasta que aguanten</span></li>
-            </ul>
+            <div class="timeline__body">
+              <p class="timeline__sub">Definiciones</p>
+              <ul class="timeline__list">
+                <li><span class="timeline__time">mañana</span><span>Segunda ronda <em>MGT</em> · final del torneo</span></li>
+                <li><span class="timeline__time">tarde</span><span>Previa</span></li>
+                <li><span class="timeline__time">23:00</span><span><strong>🇦🇷 Argentina vs Jordania 🇯🇴</strong></span></li>
+                <li><span class="timeline__time">+ tarde</span><span>El asado · truco hasta que aguanten</span></li>
+              </ul>
+            </div>
           </article>
 
-          <article class="agenda-day reveal">
-            <div class="agenda-day__date">
-              <span class="agenda-day__weekday">Dom</span>
-              <span class="agenda-day__num">28</span>
+          <article class="timeline__day reveal">
+            <div class="timeline__date">
+              <span class="timeline__matchday-tag">MD 4</span>
+              <span class="timeline__num">28</span>
+              <span class="timeline__weekday">DOMINGO</span>
             </div>
-            <p class="agenda-day__matchday">Matchday 4 · Vuelta</p>
-            <ul class="agenda-day__list">
-              <li><span class="agenda-day__time">mediodía</span><span>Restos. El que esté, lo que haya.</span></li>
-              <li><span class="agenda-day__time">tarde</span><span>Vuelta a Buenos Aires</span></li>
-            </ul>
+            <div class="timeline__body">
+              <p class="timeline__sub">Vuelta</p>
+              <ul class="timeline__list">
+                <li><span class="timeline__time">mediodía</span><span>Restos. El que esté, lo que haya.</span></li>
+                <li><span class="timeline__time">tarde</span><span>Vuelta a Buenos Aires</span></li>
+              </ul>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- 03 · EL PARTIDO -->
-    <section class="section section--mundial" id="mundial" aria-labelledby="mundial-title">
+    <section class="section section--ink" id="mundial" aria-labelledby="mundial-title">
       <div class="container">
-        <header class="section__head section__head--light reveal">
-          <span class="section__num section__num--light">03</span>
-          <span class="section__hairline section__hairline--gold" aria-hidden="true"></span>
-          <p class="caption caption--gold">FIFA World Cup ’26 · Group stage</p>
-        </header>
+        <div class="section__head section__head--light reveal">
+          <span class="section__num">03</span>
+          <span class="section__sep" aria-hidden="true">/</span>
+          <span class="section__kicker">FIFA World Cup '26 · Group Stage</span>
+        </div>
 
-        <h2 id="mundial-title" class="section__display section__display--light reveal">
-          <em>El partido.</em>
+        <h2 id="mundial-title" class="display display--light reveal">
+          EL <em>partido.</em>
         </h2>
-        <p class="section__lead section__lead--light reveal">
+        <p class="display-sub display-sub--light reveal">
           Caemos justo en el cierre de fase de grupos. Esto es lo que hay para mirar mientras se cocina.
         </p>
 
-        <article class="match-hero reveal" aria-label="Argentina vs Jordania">
-          <div class="match-hero__bar">
-            <span>Group J</span>
-            <span class="match-hero__bar-mid">Matchday 3</span>
-            <span>Dallas, TX</span>
+        <article class="match reveal" aria-label="Argentina vs Jordania, sábado 27 a las 23:00 ART">
+          <header class="match__header">
+            <span>GROUP J</span>
+            <span class="match__header-mid">★ MATCHDAY 3 ★</span>
+            <span>DALLAS · TX</span>
+          </header>
+
+          <div class="match__body">
+            <div class="match__side">
+              <span class="match__flag" aria-hidden="true">🇯🇴</span>
+              <span class="match__name">JORDANIA</span>
+              <span class="match__code">JOR · #43 FIFA</span>
+            </div>
+
+            <div class="match__center">
+              <span class="match__when">SÁB 27 · JUNIO</span>
+              <span class="match__time">23<span class="match__colon">:</span>00</span>
+              <span class="match__zone">ART · LIVE</span>
+            </div>
+
+            <div class="match__side match__side--home">
+              <span class="match__flag" aria-hidden="true">🇦🇷</span>
+              <span class="match__name">ARGENTINA</span>
+              <span class="match__code">ARG · #1 FIFA</span>
+            </div>
           </div>
 
-          <div class="match-hero__body">
-            <div class="match-hero__side">
-              <span class="match-hero__flag" aria-hidden="true">🇯🇴</span>
-              <span class="match-hero__country">Jordania</span>
-              <span class="match-hero__rank">JOR</span>
-            </div>
-
-            <div class="match-hero__center">
-              <span class="match-hero__when">Sábado 27 · Junio</span>
-              <span class="match-hero__time">23<span class="match-hero__time-sep">:</span>00</span>
-              <span class="match-hero__zone">ART</span>
-            </div>
-
-            <div class="match-hero__side match-hero__side--home">
-              <span class="match-hero__flag" aria-hidden="true">🇦🇷</span>
-              <span class="match-hero__country">Argentina</span>
-              <span class="match-hero__rank">ARG</span>
-            </div>
-          </div>
-
-          <p class="match-hero__foot"><em>Pantalla grande · asado encarado · todos juntos</em></p>
+          <p class="match__caption">
+            <em>Pantalla grande · asado encarado · todos juntos</em>
+          </p>
         </article>
 
-        <div class="fixture-board" data-fixture>
-          <div class="fixture-board__head">
-            <h3 class="fixture-board__title">Resto del fixture</h3>
+        <div class="board" data-fixture>
+          <div class="board__head">
+            <h3 class="board__title">RESTO DEL FIXTURE</h3>
             <button type="button" class="toggle" data-fixture-toggle aria-expanded="false">
               <span data-toggle-text>Ver todos</span>
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </button>
           </div>
 
-          <div class="fixture-day">
-            <p class="fixture-day__label"><span>Jue 25</span><span>Grupos D · E · F</span></p>
-            <ul class="fixture-rows">
-              <li class="match-row" data-featured>
-                <span class="match-row__time">15:00</span>
-                <span class="match-row__teams"><span class="flag">🇪🇨</span> Ecuador <em>v</em> Alemania <span class="flag">🇩🇪</span></span>
-                <span class="match-row__meta">NY/NJ</span>
+          <div class="board__day">
+            <p class="board__day-label"><span>JUE 25</span><span>GRUPOS D · E · F</span></p>
+            <ul class="board__rows">
+              <li class="board__row" data-featured>
+                <span class="board__time">15:00</span>
+                <span class="board__teams"><span class="flag">🇪🇨</span> Ecuador <em>v</em> Alemania <span class="flag">🇩🇪</span></span>
+                <span class="board__venue">NY/NJ</span>
               </li>
-              <li class="match-row">
-                <span class="match-row__time">15:00</span>
-                <span class="match-row__teams"><span class="flag">🇨🇼</span> Curazao <em>v</em> Costa de Marfil <span class="flag">🇨🇮</span></span>
-                <span class="match-row__meta">Philadelphia</span>
+              <li class="board__row">
+                <span class="board__time">15:00</span>
+                <span class="board__teams"><span class="flag">🇨🇼</span> Curazao <em>v</em> Costa de Marfil <span class="flag">🇨🇮</span></span>
+                <span class="board__venue">Philadelphia</span>
               </li>
-              <li class="match-row">
-                <span class="match-row__time">18:00</span>
-                <span class="match-row__teams"><span class="flag">🇯🇵</span> Japón <em>v</em> Suecia <span class="flag">🇸🇪</span></span>
-                <span class="match-row__meta">Dallas</span>
+              <li class="board__row">
+                <span class="board__time">18:00</span>
+                <span class="board__teams"><span class="flag">🇯🇵</span> Japón <em>v</em> Suecia <span class="flag">🇸🇪</span></span>
+                <span class="board__venue">Dallas</span>
               </li>
-              <li class="match-row">
-                <span class="match-row__time">18:00</span>
-                <span class="match-row__teams"><span class="flag">🇹🇳</span> Túnez <em>v</em> Países Bajos <span class="flag">🇳🇱</span></span>
-                <span class="match-row__meta">Kansas City</span>
+              <li class="board__row">
+                <span class="board__time">18:00</span>
+                <span class="board__teams"><span class="flag">🇹🇳</span> Túnez <em>v</em> Países Bajos <span class="flag">🇳🇱</span></span>
+                <span class="board__venue">Kansas City</span>
               </li>
-              <li class="match-row" data-featured>
-                <span class="match-row__time">21:00</span>
-                <span class="match-row__teams"><span class="flag">🇹🇷</span> Turquía <em>v</em> EE.UU. <span class="flag">🇺🇸</span></span>
-                <span class="match-row__meta">Los Ángeles</span>
+              <li class="board__row" data-featured>
+                <span class="board__time">21:00</span>
+                <span class="board__teams"><span class="flag">🇹🇷</span> Turquía <em>v</em> EE.UU. <span class="flag">🇺🇸</span></span>
+                <span class="board__venue">Los Ángeles</span>
               </li>
-              <li class="match-row" data-featured>
-                <span class="match-row__time">21:00</span>
-                <span class="match-row__teams"><span class="flag">🇵🇾</span> Paraguay <em>v</em> Australia <span class="flag">🇦🇺</span></span>
-                <span class="match-row__meta">San Francisco</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="fixture-day">
-            <p class="fixture-day__label"><span>Vie 26</span><span>Grupos G · H · I</span></p>
-            <ul class="fixture-rows">
-              <li class="match-row" data-featured>
-                <span class="match-row__time">14:00</span>
-                <span class="match-row__teams"><span class="flag">🇳🇴</span> Noruega <em>v</em> Francia <span class="flag">🇫🇷</span></span>
-                <span class="match-row__meta">Boston</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">14:00</span>
-                <span class="match-row__teams"><span class="flag">🇸🇳</span> Senegal <em>v</em> Irak <span class="flag">🇮🇶</span></span>
-                <span class="match-row__meta">Toronto</span>
-              </li>
-              <li class="match-row match-row--rio" data-featured>
-                <span class="match-row__time">19:00</span>
-                <span class="match-row__teams"><span class="flag">🇺🇾</span> Uruguay <em>v</em> España <span class="flag">🇪🇸</span></span>
-                <span class="match-row__meta">Guadalajara</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">19:00</span>
-                <span class="match-row__teams"><span class="flag">🇨🇻</span> Cabo Verde <em>v</em> A. Saudita <span class="flag">🇸🇦</span></span>
-                <span class="match-row__meta">Houston</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">22:00</span>
-                <span class="match-row__teams"><span class="flag">🇪🇬</span> Egipto <em>v</em> Irán <span class="flag">🇮🇷</span></span>
-                <span class="match-row__meta">Seattle</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">22:00</span>
-                <span class="match-row__teams"><span class="flag">🇳🇿</span> N. Zelanda <em>v</em> Bélgica <span class="flag">🇧🇪</span></span>
-                <span class="match-row__meta">Vancouver</span>
+              <li class="board__row" data-featured>
+                <span class="board__time">21:00</span>
+                <span class="board__teams"><span class="flag">🇵🇾</span> Paraguay <em>v</em> Australia <span class="flag">🇦🇺</span></span>
+                <span class="board__venue">San Francisco</span>
               </li>
             </ul>
           </div>
 
-          <div class="fixture-day">
-            <p class="fixture-day__label"><span>Sáb 27</span><span>Grupos J · K · L</span></p>
-            <ul class="fixture-rows">
-              <li class="match-row" data-featured>
-                <span class="match-row__time">16:00</span>
-                <span class="match-row__teams"><span class="flag">🇵🇦</span> Panamá <em>v</em> Inglaterra <span class="flag flag--eng">ENG</span></span>
-                <span class="match-row__meta">NY/NJ</span>
+          <div class="board__day">
+            <p class="board__day-label"><span>VIE 26</span><span>GRUPOS G · H · I</span></p>
+            <ul class="board__rows">
+              <li class="board__row" data-featured>
+                <span class="board__time">14:00</span>
+                <span class="board__teams"><span class="flag">🇳🇴</span> Noruega <em>v</em> Francia <span class="flag">🇫🇷</span></span>
+                <span class="board__venue">Boston</span>
               </li>
-              <li class="match-row">
-                <span class="match-row__time">16:00</span>
-                <span class="match-row__teams"><span class="flag">🇭🇷</span> Croacia <em>v</em> Ghana <span class="flag">🇬🇭</span></span>
-                <span class="match-row__meta">Philadelphia</span>
+              <li class="board__row">
+                <span class="board__time">14:00</span>
+                <span class="board__teams"><span class="flag">🇸🇳</span> Senegal <em>v</em> Irak <span class="flag">🇮🇶</span></span>
+                <span class="board__venue">Toronto</span>
               </li>
-              <li class="match-row" data-featured>
-                <span class="match-row__time">19:00</span>
-                <span class="match-row__teams"><span class="flag">🇨🇴</span> Colombia <em>v</em> Portugal <span class="flag">🇵🇹</span></span>
-                <span class="match-row__meta">Miami</span>
+              <li class="board__row board__row--rio" data-featured>
+                <span class="board__time">19:00</span>
+                <span class="board__teams"><span class="flag">🇺🇾</span> Uruguay <em>v</em> España <span class="flag">🇪🇸</span></span>
+                <span class="board__venue">Guadalajara</span>
               </li>
-              <li class="match-row">
-                <span class="match-row__time">19:00</span>
-                <span class="match-row__teams">RD Congo <em>v</em> Uzbekistán <span class="flag">🇺🇿</span></span>
-                <span class="match-row__meta">Atlanta</span>
+              <li class="board__row">
+                <span class="board__time">19:00</span>
+                <span class="board__teams"><span class="flag">🇨🇻</span> Cabo Verde <em>v</em> A. Saudita <span class="flag">🇸🇦</span></span>
+                <span class="board__venue">Houston</span>
               </li>
-              <li class="match-row">
-                <span class="match-row__time">23:00</span>
-                <span class="match-row__teams"><span class="flag">🇩🇿</span> Argelia <em>v</em> Austria <span class="flag">🇦🇹</span></span>
-                <span class="match-row__meta">Kansas City</span>
+              <li class="board__row">
+                <span class="board__time">22:00</span>
+                <span class="board__teams"><span class="flag">🇪🇬</span> Egipto <em>v</em> Irán <span class="flag">🇮🇷</span></span>
+                <span class="board__venue">Seattle</span>
               </li>
-            </ul>
-          </div>
-
-          <div class="fixture-day">
-            <p class="fixture-day__label"><span>Dom 28</span><span>Round of 32</span></p>
-            <ul class="fixture-rows">
-              <li class="match-row">
-                <span class="match-row__time">13:00</span>
-                <span class="match-row__teams">Match 73 — 2°A v 2°B</span>
-                <span class="match-row__meta">Los Ángeles</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">14:30</span>
-                <span class="match-row__teams">Match 76 — 1°C v 2°F</span>
-                <span class="match-row__meta">Houston</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">16:30</span>
-                <span class="match-row__teams">Match 74 — 1°E v 3° (A/B/C/D/F)</span>
-                <span class="match-row__meta">Boston</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">18:00</span>
-                <span class="match-row__teams">Match 77 — 1°I v 3° (C/D/F/G/H)</span>
-                <span class="match-row__meta">NY/NJ</span>
-              </li>
-              <li class="match-row">
-                <span class="match-row__time">20:00</span>
-                <span class="match-row__teams">Match 78 — 2°E v 2°I</span>
-                <span class="match-row__meta">Dallas</span>
-              </li>
-              <li class="match-row" data-featured>
-                <span class="match-row__time">22:00</span>
-                <span class="match-row__teams">Match 75 — 1°F v 2°C</span>
-                <span class="match-row__meta">Monterrey</span>
+              <li class="board__row">
+                <span class="board__time">22:00</span>
+                <span class="board__teams"><span class="flag">🇳🇿</span> N. Zelanda <em>v</em> Bélgica <span class="flag">🇧🇪</span></span>
+                <span class="board__venue">Vancouver</span>
               </li>
             </ul>
           </div>
 
-          <p class="fixture-foot">Horarios en ART. Datos al cierre del sorteo de FIFA.</p>
+          <div class="board__day">
+            <p class="board__day-label"><span>SÁB 27</span><span>GRUPOS J · K · L</span></p>
+            <ul class="board__rows">
+              <li class="board__row" data-featured>
+                <span class="board__time">16:00</span>
+                <span class="board__teams"><span class="flag">🇵🇦</span> Panamá <em>v</em> Inglaterra <span class="flag flag--eng">ENG</span></span>
+                <span class="board__venue">NY/NJ</span>
+              </li>
+              <li class="board__row">
+                <span class="board__time">16:00</span>
+                <span class="board__teams"><span class="flag">🇭🇷</span> Croacia <em>v</em> Ghana <span class="flag">🇬🇭</span></span>
+                <span class="board__venue">Philadelphia</span>
+              </li>
+              <li class="board__row" data-featured>
+                <span class="board__time">19:00</span>
+                <span class="board__teams"><span class="flag">🇨🇴</span> Colombia <em>v</em> Portugal <span class="flag">🇵🇹</span></span>
+                <span class="board__venue">Miami</span>
+              </li>
+              <li class="board__row">
+                <span class="board__time">19:00</span>
+                <span class="board__teams">RD Congo <em>v</em> Uzbekistán <span class="flag">🇺🇿</span></span>
+                <span class="board__venue">Atlanta</span>
+              </li>
+              <li class="board__row">
+                <span class="board__time">23:00</span>
+                <span class="board__teams"><span class="flag">🇩🇿</span> Argelia <em>v</em> Austria <span class="flag">🇦🇹</span></span>
+                <span class="board__venue">Kansas City</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="board__day">
+            <p class="board__day-label"><span>DOM 28</span><span>ROUND OF 32</span></p>
+            <ul class="board__rows">
+              <li class="board__row">
+                <span class="board__time">13:00</span>
+                <span class="board__teams">Match 73 — 2°A v 2°B</span>
+                <span class="board__venue">Los Ángeles</span>
+              </li>
+              <li class="board__row">
+                <span class="board__time">14:30</span>
+                <span class="board__teams">Match 76 — 1°C v 2°F</span>
+                <span class="board__venue">Houston</span>
+              </li>
+              <li class="board__row">
+                <span class="board__time">16:30</span>
+                <span class="board__teams">Match 74 — 1°E v 3°</span>
+                <span class="board__venue">Boston</span>
+              </li>
+              <li class="board__row">
+                <span class="board__time">18:00</span>
+                <span class="board__teams">Match 77 — 1°I v 3°</span>
+                <span class="board__venue">NY/NJ</span>
+              </li>
+              <li class="board__row">
+                <span class="board__time">20:00</span>
+                <span class="board__teams">Match 78 — 2°E v 2°I</span>
+                <span class="board__venue">Dallas</span>
+              </li>
+              <li class="board__row" data-featured>
+                <span class="board__time">22:00</span>
+                <span class="board__teams">Match 75 — 1°F v 2°C</span>
+                <span class="board__venue">Monterrey</span>
+              </li>
+            </ul>
+          </div>
+
+          <p class="board__foot">HORARIOS EN ART · DATOS AL CIERRE DEL SORTEO DE FIFA</p>
         </div>
       </div>
     </section>
 
     <!-- 04 · MGT -->
-    <section class="section" id="mgt" aria-labelledby="mgt-title">
+    <section class="section section--cream" id="mgt" aria-labelledby="mgt-title">
       <div class="container container--narrow">
-        <header class="section__head reveal">
+        <div class="section__head reveal">
           <span class="section__num">04</span>
-          <span class="section__hairline" aria-hidden="true"></span>
-          <p class="caption">Marayui Golf Tournament</p>
-        </header>
+          <span class="section__sep" aria-hidden="true">/</span>
+          <span class="section__kicker">Marayui Golf Tournament</span>
+        </div>
 
         <article class="mgt reveal">
-          <header class="mgt__top">
-            <div class="mgt__crest" aria-hidden="true">
-              <svg viewBox="0 0 140 140" width="120" height="120">
-                <circle cx="70" cy="70" r="68" fill="none" stroke="currentColor" stroke-width="0.75" />
-                <circle cx="70" cy="70" r="56" fill="none" stroke="currentColor" stroke-width="0.4" />
-                <!-- circular text top -->
-                <defs>
-                  <path id="topArc" d="M 18 70 A 52 52 0 0 1 122 70" fill="none" />
-                  <path id="botArc" d="M 122 70 A 52 52 0 0 1 18 70" fill="none" />
-                </defs>
-                <text font-family="Fraunces, serif" font-size="9" font-weight="500" fill="currentColor" letter-spacing="3">
-                  <textPath href="#topArc" startOffset="50%" text-anchor="middle">MARAYUI · GOLF · TOURNAMENT</textPath>
-                </text>
-                <text font-family="Fraunces, serif" font-style="italic" font-size="8" font-weight="500" fill="currentColor" letter-spacing="2">
-                  <textPath href="#botArc" startOffset="50%" text-anchor="middle">EST. MMXXVI</textPath>
-                </text>
-                <!-- crossed clubs -->
-                <g transform="translate(70 70)" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none">
-                  <line x1="-18" y1="-22" x2="18" y2="22" />
-                  <line x1="18" y1="-22" x2="-18" y2="22" />
-                  <ellipse cx="-18" cy="-22" rx="3.5" ry="2.5" transform="rotate(-45 -18 -22)" fill="currentColor" />
-                  <ellipse cx="18" cy="-22" rx="3.5" ry="2.5" transform="rotate(45 18 -22)" fill="currentColor" />
-                </g>
-                <!-- center MGT mark -->
-                <text x="70" y="98" font-family="Fraunces, serif" font-style="italic" font-size="14" font-weight="700" fill="currentColor" text-anchor="middle" letter-spacing="1">MGT</text>
-              </svg>
-            </div>
+          <div class="mgt__sticker">
+            <span class="mgt__sticker-num">N° 01</span>
+            <span class="mgt__sticker-edition">INAUGURAL</span>
+          </div>
 
-            <div class="mgt__title-block">
-              <p class="mgt__supra">Inaugural · Edición 01</p>
-              <h2 id="mgt-title" class="mgt__title">
-                <em>Marayui</em><br />
-                Golf<br />
-                Tournament
-              </h2>
-              <p class="mgt__sub">9 hoyos viernes · 9 hoyos sábado · 18 totales</p>
-            </div>
-          </header>
+          <div class="mgt__crest" aria-hidden="true">
+            <svg viewBox="0 0 200 200" width="160" height="160">
+              <defs>
+                <path id="topArcMgt" d="M 30 100 A 70 70 0 0 1 170 100" fill="none" />
+                <path id="botArcMgt" d="M 170 100 A 70 70 0 0 1 30 100" fill="none" />
+              </defs>
+              <!-- shield outline -->
+              <path d="M 100 10 L 180 30 L 180 110 Q 180 160 100 190 Q 20 160 20 110 L 20 30 Z"
+                    fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="100" cy="100" r="74" fill="none" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="0.4"/>
+              <text font-family="'Bebas Neue', Impact, sans-serif" font-size="11" font-weight="400" fill="currentColor" letter-spacing="3">
+                <textPath href="#topArcMgt" startOffset="50%" text-anchor="middle">MARAYUI · GOLF · TOURNAMENT</textPath>
+              </text>
+              <text font-family="Fraunces, serif" font-style="italic" font-size="9" font-weight="500" fill="currentColor" letter-spacing="2">
+                <textPath href="#botArcMgt" startOffset="50%" text-anchor="middle">EST · MMXXVI</textPath>
+              </text>
+              <!-- crossed clubs -->
+              <g transform="translate(100 100)" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none">
+                <line x1="-26" y1="-30" x2="26" y2="30" />
+                <line x1="26" y1="-30" x2="-26" y2="30" />
+                <ellipse cx="-26" cy="-30" rx="5" ry="3.5" transform="rotate(-45 -26 -30)" fill="currentColor" />
+                <ellipse cx="26" cy="-30" rx="5" ry="3.5" transform="rotate(45 26 -30)" fill="currentColor" />
+              </g>
+              <text x="100" y="140" font-family="'Bebas Neue', Impact, sans-serif" font-size="22" font-weight="400" fill="currentColor" text-anchor="middle" letter-spacing="3">MGT</text>
+            </svg>
+          </div>
+
+          <p class="mgt__supra">★ COPA MABEL · INAUGURAL '26 ★</p>
+          <h2 id="mgt-title" class="mgt__title">
+            <em>Marayui</em> Golf Tournament
+          </h2>
+          <p class="mgt__sub">9 hoyos viernes · 9 hoyos sábado · 18 totales</p>
 
           <ul class="mgt__specs">
             <li><span class="mgt__key">Formato</span><span class="mgt__val">A definir <em>en la casa</em></span></li>
@@ -487,82 +576,107 @@
             <li><span class="mgt__key">Sede</span><span class="mgt__val">Marayui · 9 hoyos</span></li>
           </ul>
 
-          <p class="mgt__note">Quién juega y cómo se arman parejas o llaves se decide cuando estemos.</p>
+          <p class="mgt__note">
+            Quién juega y cómo se arman parejas o llaves se decide cuando estemos.
+          </p>
         </article>
       </div>
     </section>
 
-    <!-- 05 · LO DEMAS -->
-    <section class="section section--paper" id="otros" aria-labelledby="otros-title">
+    <!-- 05 · LO DEMÁS -->
+    <section class="section" id="otros" aria-labelledby="otros-title">
       <div class="container">
-        <header class="section__head reveal">
+        <div class="section__head reveal">
           <span class="section__num">05</span>
-          <span class="section__hairline" aria-hidden="true"></span>
-          <p class="caption">Lo demás</p>
-        </header>
+          <span class="section__sep" aria-hidden="true">/</span>
+          <span class="section__kicker">Off the pitch</span>
+        </div>
 
-        <h2 id="otros-title" class="section__display reveal"><em>Resto</em> de lo posible.</h2>
+        <h2 id="otros-title" class="display reveal">
+          RESTO <em>de lo posible.</em>
+        </h2>
 
         <div class="cards">
-          <article class="activity reveal">
-            <div class="activity__deco" aria-hidden="true">
-              <svg viewBox="0 0 80 60" width="80" height="60">
-                <rect x="2" y="2" width="76" height="56" fill="none" stroke="currentColor" stroke-width="0.6" />
-                <line x1="40" y1="2" x2="40" y2="58" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 2"/>
-                <line x1="2" y1="30" x2="78" y2="30" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 2"/>
-                <circle cx="40" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="0.5"/>
+          <article class="card reveal">
+            <div class="card__corner-tag">★</div>
+            <div class="card__deco" aria-hidden="true">
+              <svg viewBox="0 0 80 60" width="90" height="68">
+                <rect x="2" y="2" width="76" height="56" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="40" y1="2" x2="40" y2="58" stroke="currentColor" stroke-width="0.8"/>
+                <line x1="2" y1="30" x2="78" y2="30" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 2"/>
+                <circle cx="40" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="0.8"/>
               </svg>
             </div>
-            <p class="activity__kicker">Canchas del club</p>
-            <h3 class="activity__name"><em>Paddle</em></h3>
-            <p class="activity__copy">Si hay con quién y cuándo, se arma. Round-robin, parejas sobre la marcha. Apto todo nivel.</p>
-            <p class="activity__tag">Formato a confirmar</p>
+            <p class="card__kicker">CANCHAS DEL CLUB</p>
+            <h3 class="card__title"><em>Paddle</em></h3>
+            <p class="card__copy">
+              Si hay con quién y cuándo, se arma. Round-robin, parejas sobre la marcha. Apto todo nivel.
+            </p>
+            <p class="card__tag">FORMATO A CONFIRMAR</p>
           </article>
 
-          <article class="activity activity--warm reveal">
-            <div class="activity__deco activity__deco--warm" aria-hidden="true">
-              <svg viewBox="0 0 80 60" width="80" height="60">
-                <path d="M 40 50 Q 28 38 30 26 Q 32 18 40 14 Q 48 18 50 26 Q 52 38 40 50 Z"
-                      fill="none" stroke="currentColor" stroke-width="0.8" stroke-linejoin="round"/>
-                <path d="M 40 44 Q 34 36 36 28 Q 40 22 40 22 Q 40 22 44 28 Q 46 36 40 44 Z"
-                      fill="currentColor" opacity="0.4"/>
+          <article class="card card--warm reveal">
+            <div class="card__corner-tag card__corner-tag--warm">★</div>
+            <div class="card__deco" aria-hidden="true">
+              <svg viewBox="0 0 80 80" width="90" height="90">
+                <path d="M 40 70 Q 22 50 28 32 Q 34 18 40 14 Q 46 18 52 32 Q 58 50 40 70 Z"
+                      fill="currentColor" fill-opacity="0.5"/>
+                <path d="M 40 60 Q 30 48 34 36 Q 40 26 40 26 Q 40 26 46 36 Q 50 48 40 60 Z"
+                      fill="currentColor"/>
               </svg>
             </div>
-            <p class="activity__kicker">Sábado a la noche</p>
-            <h3 class="activity__name"><em>Asado</em><br />y truco</h3>
-            <p class="activity__copy">El asado encarado mientras juega Argentina. Después, mesa, vino y truco hasta que aguanten.</p>
-            <p class="activity__tag">Reglas casa: vale truco a oscuras</p>
+            <p class="card__kicker">SÁBADO A LA NOCHE</p>
+            <h3 class="card__title">EL <em>asado</em>,<br/>después truco.</h3>
+            <p class="card__copy">
+              El asado encarado mientras juega Argentina. Después, mesa, vino y truco hasta que aguanten.
+            </p>
+            <p class="card__tag">REGLAS CASA · TRUCO A OSCURAS</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- 06 · CONFIRMAR -->
+    <!-- 06 · CTA -->
     <section class="section section--cta" id="confirmar" aria-labelledby="cta-title">
+      <svg class="section__pitch section__pitch--cta" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <circle cx="600" cy="300" r="180" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="600" cy="300" r="3" fill="currentColor"/>
+        <line x1="0" y1="300" x2="1200" y2="300" stroke="currentColor" stroke-width="1"/>
+      </svg>
+
       <div class="container container--narrow">
-        <header class="section__head reveal">
+        <div class="section__head section__head--center section__head--light reveal">
           <span class="section__num">06</span>
-          <span class="section__hairline" aria-hidden="true"></span>
-          <p class="caption">Confirmación</p>
-        </header>
+          <span class="section__sep" aria-hidden="true">/</span>
+          <span class="section__kicker">Convocatoria</span>
+        </div>
 
-        <h2 id="cta-title" class="cta__title reveal"><em>Avisanos</em><br />si venís.</h2>
-        <p class="cta__lead reveal">El grupo de WhatsApp ya está armado — son los mismos del finde. Confirmá ahí cuántos vienen y si traés a alguien, así repartimos las camas.</p>
+        <h2 id="cta-title" class="cta__title reveal">
+          <em>Avisanos</em><br/>si venís.
+        </h2>
+        <p class="cta__lead reveal">
+          El grupo de WhatsApp ya está armado — son los mismos del finde. Confirmá ahí cuántos vienen
+          y si traés a alguien, así repartimos las camas.
+        </p>
 
-        <a class="cta__button reveal"
+        <a class="btn btn--primary btn--xl reveal"
            data-whatsapp-link
            data-whatsapp-group-link="https://chat.whatsapp.com/HzXHaawsEY4A5PCeLpWju2?mode=gi_t"
            href="https://chat.whatsapp.com/HzXHaawsEY4A5PCeLpWju2?mode=gi_t"
            target="_blank"
            rel="noopener">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
           </svg>
-          <span data-cta-text>Abrir el grupo</span>
-          <span class="cta__button-arrow" aria-hidden="true">→</span>
+          <span data-cta-text>ABRIR EL GRUPO</span>
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
 
-        <p class="cta__deadline reveal">Antes del lunes <em>22 de junio</em>, si se puede.</p>
+        <p class="cta__deadline reveal">
+          ANTES DEL <em>LUNES 22 DE JUNIO</em>, SI SE PUEDE.
+        </p>
       </div>
     </section>
 
@@ -571,18 +685,18 @@
       <div class="container">
         <div class="footer__grid">
           <div class="footer__col">
-            <p class="footer__tag">MUNDIAL</p>
-            <p class="footer__tag-italic"><em>Marayui</em></p>
+            <p class="footer__small">MUNDIAL</p>
+            <p class="footer__big"><em>Marayui</em></p>
           </div>
           <div class="footer__col footer__col--center">
             <span class="footer__rule" aria-hidden="true"></span>
-            <p class="footer__year">25 — 28 · VI · MMXXVI</p>
-            <p class="footer__edition">Edición Inaugural · Nº 01</p>
+            <p class="footer__date">25 — 28 · VI · MMXXVI</p>
+            <p class="footer__edition">EDICIÓN 01 · INAUGURAL</p>
             <span class="footer__rule" aria-hidden="true"></span>
           </div>
           <div class="footer__col footer__col--right">
-            <p class="footer__author">aubone79</p>
-            <p class="footer__author-meta">Marayui · Chapadmalal · AR</p>
+            <p class="footer__small">aubone79</p>
+            <p class="footer__small footer__small--sub">MARAYUI · CHAPADMALAL · AR</p>
           </div>
         </div>
       </div>
